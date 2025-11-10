@@ -373,8 +373,9 @@ def register_callbacks (app):
             pm10_fig.add_hline(y=300, line_dash="dot", line_color="red")
 
         cur_state = html.Div([
-            html.H5 (f'*Индекс качества воздуха (AQI); уровень, согласно EPA: {data['aqi']}')
+            html.H5 (f'*Индекс качества воздуха (AQI), согласно EPA')
         ])
         return cur_state, co_fig, no2_fig, o3_fig, so2_fig, pm2_5_fig, pm10_fig
+
 
 
